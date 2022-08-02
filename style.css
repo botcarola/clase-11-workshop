@@ -1,0 +1,64 @@
+nav {
+    text-align: center;
+}
+
+main {
+    display: none;
+    flex-direction: column;
+}
+
+#form-new-note {
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    justify-content: space-evenly;
+}
+
+.container-button-cerrar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-sesion {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cerrar-newnote {
+    width: 25px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.notita {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(241, 251, 204);
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: #e5f17a;
+}
+
+#container-notes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+

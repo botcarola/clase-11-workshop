@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog de notas</title>
+</head>
+<body>
+    <nav>
+        <h1>
+            Blog de notas
+        </h1>
+    </nav>
+    <aside>
+        <h2>
+            Inicie sesión
+        </h2>
+        <form id="form-sesion">
+            <label for="usuario">
+                Usuario
+            </label>
+            <input type="text" id="usuario" name="usuario" />
+            <label for="contrasenia">
+                Contraseña
+            </label>
+            <input type="password" id="contrasenia" name="contrasenia" />
+            <label>
+                <input type="submit" value="enviar" />
+            </label>
+        </form>
+    </aside>
+    <main>
+        <div class="button-container">
+            <button type="button" id="new-note">
+                new note
+            </button>
+            <button type="button" id="log-out">
+                log out
+            </button>
+        </div>
+        <div class="contenedor-form-newnote">
+            <form id="form-new-note">
+                <div class="container-button-cerrar">
+                    <button type="button" id="cerrar-newnote">
+                        X
+                    </button>
+                </div>
+                <label for="input-fecha-newnote">
+                    Fecha
+                </label>
+                <input type="date" id="input-fecha-newnote" name="input-fecha-newnote" required/>
+                <label for="input-text-newnote">
+                    Ingrese nota
+                </label>
+                <input type="text" id="input-text-newnote" name="input-text-newnote" required>
+                <label>
+                    <input type="submit" value="Guardar" id="submit-newnote" />
+                </label>                
+            </form>
+        </div>
+        <section id="container-notes">
+        </section>        
+    </main>  
+    <script src="index.js"></script>
+</body>
+</html>
